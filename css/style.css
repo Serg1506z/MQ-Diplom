@@ -1281,7 +1281,7 @@ sup {
   .header {
     background-image: url(../images/banner-mobile.jpg);
     background-size: cover;
-
+    min-width: 640px;
   }
 
   .header-container {
@@ -1311,7 +1311,7 @@ sup {
   }
 
   .trends {
-    width: 100%;
+    min-width: 640px;
   }
 
   .trends-section {
@@ -1333,6 +1333,7 @@ sup {
   .main-content {
     flex-direction: column;
     padding: 44px 15px;
+    min-width: 640px;
   }
 
   .cards {
@@ -1396,6 +1397,10 @@ sup {
     text-align: center;
   }
 
+  .works {
+    min-width: 640px;
+  }
+
   .works-header-title {
     font-size: 16px;
   }
@@ -1431,7 +1436,7 @@ sup {
 
   .footer {
     padding-top: 43px;
-    width: 100%;
+    width: 640px;
   }
 
   .social-list {
@@ -1451,6 +1456,7 @@ sup {
     background-image: url(../images/banner-mobile.jpg);
     background-position: -650px;
     background-size: cover;
+    min-width: 640px;
   }
 
   .header-container {
@@ -1479,7 +1485,7 @@ sup {
   }
 
   .trends {
-    width: 100%;
+    min-width: 640px;
   }
 
   .trends-section {
@@ -1500,7 +1506,7 @@ sup {
   .main-content {
     flex-direction: column;
     padding: 44px 15px;
-    width: 100%;
+    min-width: 640px;
   }
 
   .card {
@@ -1556,6 +1562,10 @@ sup {
     text-align: center;
   }
 
+  .works {
+    min-width: 640px;
+  }
+
   .works-header-title {
     font-size: 16px;
   }
@@ -1573,7 +1583,7 @@ sup {
 
   .footer {
     padding-top: 43px;
-    width: 100%;
+    width: 640px;
   }
 
   .social-list {
