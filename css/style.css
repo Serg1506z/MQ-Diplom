@@ -317,7 +317,6 @@ input {
   z-index: 2;
   position: relative;
   margin: 0 auto;
-  font-size: 45px;
 }
 
 .trends {
@@ -487,9 +486,6 @@ h3 {
   margin-top: -28px;
 }
 
-.category-name {
-  margin-top: -32px;
-}
 
 .category-item {
   font-family: "OpenSans Bold";
@@ -1053,10 +1049,17 @@ sup {
   .header {
     background-image: url(../images/banner-bg-tablet.jpg);
     background-size: cover;
+
   }
 
   .header-container {
     padding: 43px 35px 124px;
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 40px;
   }
 
   .trends {
@@ -1160,17 +1163,14 @@ sup {
 }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
-  body {
-    max-width: 1200px;
-  }
-
   .header {
     background-image: url(../images/banner-bg-tablet.jpg);
     background-size: cover;
+    max-width: 1200px;
   }
 
   .header-container {
-    max-width: 640px;
+    width: 100%;
   }
 
   .menu {
@@ -1281,6 +1281,7 @@ sup {
   .header {
     background-image: url(../images/banner-mobile.jpg);
     background-size: cover;
+    background-position: -650px;
     min-width: 640px;
   }
 
