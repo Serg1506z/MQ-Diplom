@@ -911,10 +911,12 @@ sup {
   margin-top: -30px;
   padding-left: 30px;
   min-height: 265px;
-  width: 160px;
   flex-grow: 1;
   overflow: hidden;
   width: 340px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 
 .text-description {
@@ -1053,7 +1055,7 @@ sup {
 
   .header-container {
     padding: 43px 35px 124px;
-    width: 100%;
+    width: calc(100% - 70px);
   }
 
   .title {
@@ -1137,23 +1139,28 @@ sup {
     max-width: 340px;
     min-width: 200px;
     width: auto;
+    padding-left: 30px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .works-image1 {
     height: 205px;
-    width: 300px;
+    width: 240px;
     background-image: url(../images/shop-item-tablet1.jpg);
   }
 
   .works-image2 {
     height: 205px;
-    width: 300px;
+    width: 240px;
     background-image: url(../images/shop-item-tablet2.jpg);
   }
 
   .works-image3 {
     height: 205px;
-    width: 300px;
+    width: 240px;
     background-image: url(../images/shop-item-tablet3.jpg);
   }
 
@@ -1175,7 +1182,7 @@ sup {
   }
 
   .header-container {
-    width: 100%;
+    width: calc(100% - 30px);
   }
 
   .menu {
@@ -1288,12 +1295,12 @@ sup {
     background-image: url(../images/banner-mobile.jpg);
     background-size: cover;
     background-position: -650px;
-    min-width: 640px;
+    max-width: 640px;
   }
 
   .header-container {
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 30px);
   }
 
   .header-logo {
@@ -1409,7 +1416,8 @@ sup {
   }
 
   .works {
-    min-width: 640px;
+    max-width: 640px;
+    margin-left: 0;
   }
 
   .works-header-title {
@@ -1467,12 +1475,12 @@ sup {
     background-image: url(../images/banner-mobile.jpg);
     background-position: -650px;
     background-size: cover;
-    min-width: 640px;
+    max-width: 640px;
   }
 
   .header-container {
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 30px);
   }
 
   .header-logo {
@@ -1496,7 +1504,7 @@ sup {
   }
 
   .trends {
-    min-width: 640px;
+    max-width: 640px;
   }
 
   .trends-section {
@@ -1517,7 +1525,7 @@ sup {
   .main-content {
     flex-direction: column;
     padding: 44px 15px;
-    min-width: 640px;
+    max-width: 640px;
   }
 
   .card {
@@ -1578,7 +1586,8 @@ sup {
   }
 
   .works {
-    min-width: 640px;
+    max-width: 640px;
+    margin-left: 0;
   }
 
   .works-header-title {
@@ -1587,7 +1596,7 @@ sup {
 
   .works-block {
     flex-direction: column;
-    width: 100%;
+    max-width: 640px;
   }
 
   .works-sections {
@@ -1598,8 +1607,19 @@ sup {
 
   .footer {
     padding-top: 43px;
-    width: 640px;
+    width: 100vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  .address {
+
+    width: 80%;
+  }
+
 
   .social-list {
     padding: 42px 0;
