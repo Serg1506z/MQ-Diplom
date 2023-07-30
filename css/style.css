@@ -386,15 +386,15 @@ input {
 }
 
 .trends_items-2 {
-  background: url(../images/trend2.jpg);
+  background-image: url(../images/trend2.jpg);
 }
 
 .trends_items-3 {
-  background: url(../images/trend3.jpg);
+  background-image: url(../images/trend3.jpg);
 }
 
 .trends_items-4 {
-  background: url(../images/trend4.jpg);
+  background-image: url(../images/trend4.jpg);
 }
 
 .trends-name {
@@ -1029,7 +1029,7 @@ sup {
 .copyright {
   width: 240px;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans Regular";
   font-weight: bold;
   font-size: 12px;
   text-align: center;
@@ -1356,6 +1356,7 @@ sup {
 
   .card {
     flex-direction: column;
+    align-items: center;
     width: 100%;
     border-bottom: solid 4px #eeeeee;
     margin-bottom: 35px;
@@ -1363,6 +1364,7 @@ sup {
 
   .card-image {
     width: 100%;
+    margin-right: 0;
   }
 
   .card-description {
@@ -1398,22 +1400,78 @@ sup {
     margin-top: 44px;
   }
 
+  .recent-post {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .recent-post-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .recent-post-name {
+    width: 100%;
+  }
+
   .aside-title {
     font-size: 16px;
+    align-self: center;
+  }
+
+  .subscribe-part {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .email {
+    width: calc(100% - 25px);
+    box-sizing: content-box;
+  }
+
+  .subscribe-button {
+    width: calc(100% - 25px);
+    box-sizing: content-box;
+  }
+
+  .tags {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tag-list {
+
+    gap: 10px;
   }
 
   .search-text-input {
     width: 100%;
   }
 
-  .tags {
-    font-size: 16px;
-  }
-
   .tag-list-item {
     flex-grow: 1;
     text-align: center;
+    padding: 10px;
   }
+
+  .tag-list-item:nth-child(n + 4) {
+    margin: 0;
+  }
+
+  .categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .search-text-input {
+    width: 100%;
+  }
+
+
 
   .works {
     max-width: 640px;
@@ -1531,18 +1589,21 @@ sup {
 
   .card {
     flex-direction: column;
+    align-items: center;
     width: 100%;
     border-bottom: solid 4px #eeeeee;
     margin-bottom: 35px;
   }
 
   .card-image {
-    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
   }
 
   .card-description {
     margin-top: 16px;
     justify-content: space-between;
+    align-items: center;
   }
 
   .category {
@@ -1573,8 +1634,50 @@ sup {
     margin-top: 44px;
   }
 
+  .recent-post {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .recent-post-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .recent-post-name {
+    width: 100%;
+  }
+
   .aside-title {
     font-size: 16px;
+    align-self: center;
+  }
+
+  .subscribe-part {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .email {
+    width: calc(100% - 25px);
+    box-sizing: content-box;
+  }
+
+  .subscribe-button {
+    width: calc(100% - 25px);
+    box-sizing: content-box;
+  }
+
+  .tags {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tag-list {
+
+    gap: 10px;
   }
 
   .search-text-input {
@@ -1584,6 +1687,17 @@ sup {
   .tag-list-item {
     flex-grow: 1;
     text-align: center;
+    padding: 10px;
+  }
+
+  .tag-list-item:nth-child(n + 4) {
+    margin: 0;
+  }
+
+  .categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .works {
