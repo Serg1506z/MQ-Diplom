@@ -1245,8 +1245,8 @@ sup {
 
   .works-block {
     flex-wrap: wrap;
-    margin-left: 57px;
-    margin-right: 57px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
 
   }
@@ -1425,6 +1425,15 @@ sup {
 
   }
 
+  .search {
+    width: 100%;
+  }
+
+  .search-text-input {
+    width: calc(100% - 25px);
+    box-sizing: content-box;
+  }
+
   .email {
     width: calc(100% - 25px);
     box-sizing: content-box;
@@ -1447,7 +1456,8 @@ sup {
   }
 
   .search-text-input {
-    width: 100%;
+    width: calc(100% - 25px);
+    box-sizing: content-box;
   }
 
   .tag-list-item {
@@ -1465,13 +1475,6 @@ sup {
     display: flex;
     flex-direction: column;
   }
-
-
-  .search-text-input {
-    width: 100%;
-  }
-
-
 
   .works {
     max-width: 640px;
@@ -1659,6 +1662,15 @@ sup {
 
   }
 
+  .search {
+    width: 100%;
+  }
+
+  .search-text-input {
+    width: calc(100% - 25px);
+    box-sizing: content-box;
+  }
+
   .email {
     width: calc(100% - 25px);
     box-sizing: content-box;
@@ -1678,10 +1690,6 @@ sup {
   .tag-list {
 
     gap: 10px;
-  }
-
-  .search-text-input {
-    width: 100%;
   }
 
   .tag-list-item {
